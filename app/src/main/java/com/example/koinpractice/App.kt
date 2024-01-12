@@ -23,6 +23,7 @@ class App : Application() {
         // 需要 ViewModel 時就呼叫 viewModel() 創立 ViewModel 的實例 MyViewModel
         // 創建時發現 MyViewModel 的建構子需要 MyRepository 的實例
         viewModel { MyViewModel(get()) }
+        // Phase 2
     }
     override fun onCreate() {
         super.onCreate()
