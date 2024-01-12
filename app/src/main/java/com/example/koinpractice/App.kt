@@ -17,6 +17,7 @@ class App : Application() {
         single<ApiService> { ApiServiceImpl() }
         single { MyRepository(get()) }
         single {DataManager(get())}
+        // Phase 1
 
         // 這是一個叫做 viewModel() 的方法
         // 需要 ViewModel 時就呼叫 viewModel() 創立 ViewModel 的實例 MyViewModel
