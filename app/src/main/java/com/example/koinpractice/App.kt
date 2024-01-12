@@ -9,6 +9,7 @@ import org.koin.dsl.module
 
 class App : Application() {
     private val myModule = module {
+        // Master Branch
         // 當程式碼中需要使用到 ApiService 實例時，就會以 singleton 的 ApiServiceImpl 實作
         // 今天當我需要替換實作為 NewApiServiceImpl ，我只需要在這裡改實作方式就好
         // 所有地方是使用 ApiService 這個介面的實例，但由哪個 class 實作是由 Koin 判斷
